@@ -2,7 +2,7 @@
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 % 指定该.cls文件的信息
 \ProvidesClass{tongjithesis}
-[2024/10/21 弹塑性力学作业模板]
+[2025/06/24 高度混凝土课程作业]
 % \hyphenation 用于断词
 \hyphenation{Tongji-Thesis}
 % \textsc 将所有字符大写
@@ -23,11 +23,11 @@
 % 条件命令 newif
 \newif\iftongji@master
 \newif\iftongji@doctor
-\newif\iftongji@tsxlx
+\newif\iftongji@gdhnt
 \define@key{tongji}{degree}{%
   \tongji@masterfalse
   \tongji@doctorfalse
-  \tongji@tsxlxfalse
+  \tongji@gdhntfalse
   % 将输入的参数（比如 master 或 doctor）变为相应的条件命令，设置为 true。\csname ... \endcsname 是一种动态生成命令的方式，可以将 #1 替换为传入的参数值，从而选择启用硕士或博士的条件
   \expandafter\csname tongji@#1true\endcsname}
 
@@ -94,10 +94,10 @@
 \ProcessKeyvalOptions*
   \iftongji@master\relax\else
     \iftongji@doctor\relax\else
-      \iftongji@tsxlx\relax\else
+      \iftongji@gdhnt\relax\else
         \ClassError{tongjithesis}%
                    {Please specify thesis degree in option: \MessageBreak
-                    degree=[master | doctor | tsxlx]}{}    
+                    degree=[master | doctor | gdhnt]}{}    
       \fi                
     \fi
   \fi
