@@ -1,6 +1,6 @@
-另一份同济大学《弹塑性力学》的课程作业——基于同济大学研究生毕业论文模板.doc的.tex版本
+同济大学《高等混凝土》的课程作业——基于同济大学研究生毕业论文模板.doc的.tex版本
 
-A .tex version of the coursework for Elastoplastic Mechanics at Tongji University - based on the Tongji University Graduate Thesis Template.doc
+A .tex version of the coursework for Advanced Concrete at Tongji University - based on the Tongji University Graduate Thesis Template.doc
 
 十分感谢前辈们历年来对同济大学研究生毕业论文LaTeX模板的迭代更新，如果需要了解更多关于模板的内容，请在GitHub上自行搜索
 
